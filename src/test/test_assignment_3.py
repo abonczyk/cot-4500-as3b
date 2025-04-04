@@ -46,9 +46,9 @@ A_diag = np.array([
 
 result, details = diagonally_dominant(A_diag)
 if result:
-    print("The matrix is diagonally dominant.")
+    print("\nThe matrix is diagonally dominant.")
 else:
-    print("The matrix is not diagonally dominant.")
+    print("\nThe matrix is not diagonally dominant.")
     print("\nSpecific issues:")
     for row in details:
         print(f"Row {row['row']}: |diagonal| ({row['diagonal']:.2f}) < sum of other elements ({row['other_sum']:.2f})")
